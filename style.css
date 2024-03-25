@@ -324,12 +324,13 @@ padding: 5px;
 }
 @media (max-width: 665px) {
     header form input{
-        width: 200px;
-        padding: 5px;
-        font-size: 1em;
+        display: none;
+    }
+    form, #search-icon{
+        display: none;
     }
     .logo{
-        font-size: 1.3rem;
+        font-size: 1.7rem;
         padding: 5px;
     }
     .content-container{
