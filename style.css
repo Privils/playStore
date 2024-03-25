@@ -87,10 +87,6 @@ header form input{
 #heart-icon:hover{
     cursor: pointer;
 }
-.mainSection{
-margin-right: 20px;
-padding: 15px;
-}
 .container{
     width: 100%;
   height: fit-content;
@@ -98,7 +94,6 @@ padding: 15px;
   justify-content: space-between;
   background-color: rgba(0, 0, 0, .9);
   flex-wrap: wrap;
-  margin-left: 20px;
 }
 .content-container{
     width: 250px;
@@ -109,11 +104,9 @@ padding: 15px;
 .icon-container{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     position: relative;
     margin-top: 9px;
-}
-.icon-container i{
-    font-size: 2em;
 }
 
 span{
@@ -274,124 +267,147 @@ padding: 5px;
     transform: scale(1.06);
     font-style: italic;
 }
-@media (max-Width: 687px) {
+@media (max-width: 1005px) {
+    header form input{
+        width: 400px;
+        padding: 5px;
+        font-size: 1.3em;
+    }
+}
+@media (max-width: 824px) {
+    header form input{
+        width: 300px;
+        padding: 5px;
+        font-size: 1.3em;
+    }
+    .logo{
+        font-size: 2rem;
+        padding: 5px;
+    }
+    .content-container{
+        width: 220px;
+        border: 2px solid #2c3e50;
+        box-shadow: 5px 5px 3px #2c3e50;
+        margin: 10px;
+    }
+}
+@media (max-width: 730px) {
+    header form input{
+        width: 300px;
+        padding: 5px;
+        font-size: 1em;
+    }
+    .logo{
+        font-size: 1.5rem;
+        padding: 5px;
+    }
+    .content-container{
+        width: 200px;
+        border: 2px solid #2c3e50;
+        box-shadow: 5px 5px 3px #2c3e50;
+        margin: 10px;
+    }
+    .image-store{
+        width: 100%;
+        height: 200px;
+        padding: 10px;
+      }
+      .item-price{
+        height: fit-content;
+        padding: 4px;
+      }
+      #shopping{
+        margin: 10px;
+        font-size: 1em;
+        padding: 5px;
+    }
+}
+@media (max-width: 665px) {
     header form input{
         width: 200px;
-        border: 2px solid black;
         padding: 5px;
-        font-size: .7em;
-        border-top-right-radius: 10px;
-        border-bottom-right-radius: 10px;
-        margin-right: 1px;
-        border-top: 4px solid;
-        border-right: 3px solid;
-    }
-     #search-icon{
-        background-color: gray;
-        padding: 6px;
-        font-size: 1.3em;
-        border-top-right-radius: 10px;
-        border-bottom-right-radius: 10px;
-        margin-left: 8px;
-        margin-right: 5px;
-    }
-    #heart-icon{
-        font-size: 1.2em;
-    }
-    #cart-icon{
-        font-size: 1.2em;
-    }
-}
-@media (max-width: 616px) {
-    .content-container{
-        width: 150px;
-        margin-left: 3px;
-    }
-}
-@media (max-width: 561px) {
-    header form input{
-        width: 150px;
-        border: 2px solid black;
-        padding: 5px;
-        font-size: .7em;
-        border-top-right-radius: 10px;
-        border-bottom-right-radius: 10px;
-        margin-right: 1px;
-        border-top: 4px solid;
-        border-right: 3px solid;
-    }
-     #search-icon{
-        background-color: gray;
-        padding: 6px;
-        font-size: 1em;
-        border-top-right-radius: 10px;
-        border-bottom-right-radius: 10px;
-        margin-left: 8px;
-        margin-right: 3px;
-    }
-    #heart-icon{
         font-size: 1em;
     }
-    #cart-icon{
-        font-size: 1em;
-    }
-    header h1{
-        font-size: 1.5em;
-    }
-}
-@media (max-width: 469px) {
-    .name{
-        font-size: 1.2em;
-    }
-    #shopping{
-        font-size: 1.2em;
-    }
-        
-    header h1{
-        font-size: 1.2em;
-    }
-    .content-container{
-        width: 120px;
-        height: 120;
-    }
-    header form input{
-        width: 130px;
-        border: 2px solid black;
+    .logo{
+        font-size: 1.3rem;
         padding: 5px;
-        font-size: .7em;
-        border-top-right-radius: 10px;
-        border-bottom-right-radius: 10px;
-        margin-right: 1px;
-        border-top: 4px solid;
-        border-right: 3px solid;
     }
-     #search-icon{
-        background-color: gray;
-        padding: 4px;
-        font-size: 14px;
-        border-top-right-radius: 10px;
-        border-bottom-right-radius: 10px;
-        margin-left: 3px;
-        margin-right: 2px;
-    }
-    #heart-icon{
-        font-size: 14px;
-    }
-    #cart-icon{
-        font-size: 14px;
-        margin-right: 5px;
-        margin-left: 3px;
-    }
-}
-@media (max-width: 370px) {
     .content-container{
         width: 100px;
-        height: 220px;
+        border: 2px solid #2c3e50;
+        box-shadow: 5px 5px 3px #2c3e50;
+        margin: 10px;
+        height: fit-content;
+    }
+    .image-store{
+        width: 100%;
+        height: 150px;
+        padding: 10px;
+      }
+      .item-price{
+        height: fit-content;
+        padding: 4px;
+        font-size: smaller;
+      }
+      #shopping{
+        margin: 10px;
+        padding: 2px;
+        font-size: smaller;
+    }
+    .section-header{
+        text-align: center;
+        color: #56CCF2;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 3.5em;
+    }
+    
+}
+@media (max-width: 490px) {
+    body{
+        font-size: x-small;
+    }
+    header form input{
+        display: none;
+    }
+    .logo{
+        padding: 5px;
+    }
+    .content-container{
+        width: 70px;
+        margin: 5px;
+        height: fit-content;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        place-content: center;
+    }
+    .image-store{
+        width: 60px;
+        height: 90px;
+        padding: 4px;
+      }
+      .item-price{
+        height: fit-content;
+        padding: 4px;
+        font-size: 10px;
+      }
+      #shopping{
+        margin: 2px;
+        padding: 2px;
+        font-size: xx-small;
     }
     .name{
-        font-size: 16px;
+        margin: 0;
     }
-    #shopping{
-        font-size: 16px;
+    .cart-total {
+        margin-top: 10px;
+        margin-right: 3px;
+        width: auto;
+    }
+    header form input{
+        width: 200px;
+        padding: 5px;
+        font-size: 1em;
     }
 }
