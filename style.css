@@ -11,7 +11,6 @@ body{
     background-attachment: fixed;
     background-position: center;
     height: 100%;
-    overflow-x: hidden;
 }
 header{
     display: flex;
@@ -89,7 +88,8 @@ header form input{
     cursor: pointer;
 }
 .mainSection{
-
+margin-right: 20px;
+padding: 15px;
 }
 .container{
     width: 100%;
