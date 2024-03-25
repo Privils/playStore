@@ -3,12 +3,36 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    width: 100%;
+    background-image: url('./images/21.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    height: 100%;
+}
 header{
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
     border-bottom: 2px solid black;
+    background-color: #2c3e50;
+}
+.logo{
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 2rem;
+    margin-left: 12px;
+    padding: 10px;
+    font-weight: 700;
+    background-image: linear-gradient(to right, rgb(34, 241, 2), red); 
+    padding: 10px;
+    border-radius: 5px;
+    -webkit-background-clip: text; 
+    background-clip: text;
+    color: transparent;
 }
 header h1{
     font-size: 3em;
@@ -24,15 +48,16 @@ form {
     flex-wrap: wrap;
 }
 header form input{
-    width: 300px;
+    width: 500px;
     border: 2px solid black;
     padding: 5px;
-    font-size: .8em;
+    font-size: 1.3em;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     margin-right: 1px;
     border-top: 4px solid;
     border-right: 3px solid;
+    background-color: rgba(0, 0, 0, .5);
 }
  #search-icon{
     background-color: gray;
@@ -62,20 +87,23 @@ header form input{
 #heart-icon:hover{
     cursor: pointer;
 }
+.mainSection{
+
+}
 .container{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
     width: 100%;
-    height: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(0, 0, 0, .9);
+  flex-wrap: wrap;
+  margin-left: 20px;
 }
 .content-container{
-    width: 200px;
-    height: 357px;margin-top: 10px;
-    overflow: hidden;
-    border:  2px solid gray;
-    border-radius: 12px;
-    box-shadow: 0px 2px 0 3px;
+    width: 250px;
+    border: 2px solid #2c3e50;
+    box-shadow: 5px 5px 3px #2c3e50;
+    margin: 10px;
 }
 .icon-container{
     display: flex;
@@ -86,34 +114,47 @@ header form input{
 .icon-container i{
     font-size: 2em;
 }
-.item-price{
-    font-size: 1.5em;
-    font-weight: 300;
+
+span{
+    width: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5px;
+  font-weight: 200;
+  font-size: 1.2em;
+  text-align: center;
+  background-color: #1b2c3e;
+  margin-bottom: 2px;
+  border-radius: 0  9px  9px 0;
+  color: white;
+  padding: 3px;
 }
-.name{
-    text-transform: capitalize;
-    font-weight: 300;
-    font-size: 1.2em;
-    margin-top: 5px;
-    margin-bottom: 5px;
-}
-img{
+.image-store{
     width: 100%;
-    padding: 5px;
-}
+    height: 300px;
+    object-fit: cover;
+    padding: 15px;
+  }
 .space{
     margin-bottom: 50px;
 }
+#shopping{
+    margin: 10px;
+    text-transform: capitalize;
+    font-size: 1.2em;
+    padding: 5px;
+    background-color: #1b2c3e;
+    color: white;
+    cursor: pointer;
+}
 #shopping:hover{
-cursor: pointer;
-color: red;
+color: #1e7c9b;
 }
 .cart-column {
     display: flex;
     align-items: center;
     border-bottom: 1px solid black;
-    margin-right: 1.5em;
-    padding-bottom: 10px;
+    margin-right: 1.2em;
     margin-top: 10px;
 }
 
@@ -126,9 +167,9 @@ color: red;
 }
 
 .cart-price {
-    width: 20%;
+    width: 15%;
     font-size: 1.2em;
-    color: #333;
+    color: white;
 }
 
 .cart-quantity {
@@ -169,21 +210,27 @@ color: red;
 }
 
 .cart-total {
-    text-align: end;
+    display: flex;
+    justify-content: right;
     margin-top: 10px;
     margin-right: 10px;
+    width: 100%;
+    height: fit-content;
+    background-color: #2c3e50;
 }
 
 .cart-total-title {
     font-weight: bold;
     font-size: 1.5em;
-    color: black;
+    color: white;
     margin-right: 20px;
+    padding: 11px;
 }
 
 .cart-total-price {
-    color: #333;
+    color: white;
     font-size: 1.1em;
+    padding: 10px;
 }
 
 
@@ -191,7 +238,8 @@ color: red;
     border-radius: .3em;
     background-color: red;
     color: white;
-    font-size: bold;
+    font-size: 1.4em;
+    float: right;
 }
 .btn-danger:hover{
     cursor: pointer;
@@ -294,9 +342,6 @@ padding: 5px;
     .name{
         font-size: 1.2em;
     }
-    .item-price{
-        font-size: 1.2em;
-    }
     #shopping{
         font-size: 1.2em;
     }
@@ -343,9 +388,6 @@ padding: 5px;
         height: 220px;
     }
     .name{
-        font-size: 16px;
-    }
-    .item-price{
         font-size: 16px;
     }
     #shopping{

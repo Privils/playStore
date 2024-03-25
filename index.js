@@ -1,6 +1,6 @@
 if (document.readyState == 'loading') {
     document.addEventListener('DOMContentLoaded', ready)
-    alert('Please click the cart icon to add things to your cart and they should appear at the bottom of the shopping list ')
+
  } else {
     ready()
  }
@@ -50,6 +50,11 @@ if (document.readyState == 'loading') {
     updateCartTotal() 
     increaseTrolly()
  }
+
+
+
+
+
  function addToCartIconFunction(title, imgSrc, price){
  let newContainer = document.createElement('div');
  newContainer.classList.add('cart-row');
@@ -77,6 +82,8 @@ if (document.readyState == 'loading') {
  newContainer.getElementsByClassName('btn-danger')[0].addEventListener('click', removerFunction);
  newContainer.getElementsByClassName('cart-quantity-input')[0].addEventListener('change', quantityInput);
  }
+
+
  function quantityInput(event){
     let input = event.target;
     if(isNaN(input.value) || input.value <= 0){
